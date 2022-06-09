@@ -1,0 +1,118 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, "Noto Sans", sans-serif, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: black;
+}
+
+*{
+    padding:0;
+    margin:0;   
+    
+}
+
+/*Customização Login */
+
+img{
+    margin-top: 12%;
+    margin-bottom: 54.3%;
+}
+
+h2 {
+ 
+    margin-top: -167px;
+}
+
+.login-container{
+	background:linear-gradient(0deg, rgba(186,179,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.login-content {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20;
+
+}
+
+.centered {
+    margin: 0 auto;
+    float: none;
+}
+
+.input-group i {
+    position: absolute;
+}
+
+i {
+    padding: 17px 0px 10px 12px;
+    color: black;;
+    font-size: 16px;
+}
+
+.bi-key-fill {
+    transform: rotate(45deg)
+}
+
+#linha-vertical {
+    height: 20px;
+    border-right: 1px solid black;
+    position: absolute;
+    padding-left: 40px;
+    margin-top: 18px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    padding-left: 55px;
+
+}
+
+.form-group .input-group input{
+    border: 0.5px solid  #373e4a;
+    border-radius: 3px;
+    background: #626e8400;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-senha a {
+    font-size: 14.5px;
+    text-decoration: none;
+    color:black;
+}
+
+.form-senha a:hover {
+   color: #5700F5;
+}
+
+/*customização botão*/
+
+.login-form .form-group .btn-login {
+    background: #373e4a00;
+    border-color: black;
+    border-radius: 4%;
+    text-align: center;
+    margin: 30px auto;
+    width: 150px;
+    height: 50px;
+    color: black;	
+}
+
+.login-form .form-group .btn-login:hover {
+    background: #5700F5;
+}
+
+.login-bottom-links{
+    margin-top: 30px;
+    padding-bottom: 55%;
+}
+
+.login-bottom-links a {
+    color: black;
+}
+
+

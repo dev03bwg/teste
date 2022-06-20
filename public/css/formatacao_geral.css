@@ -1,0 +1,14 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, "Noto Sans", sans-serif, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: black;
+}
+
+*{
+    padding:0;
+    margin:0;   
+    
+}
+
+

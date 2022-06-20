@@ -1,0 +1,102 @@
+/* Customizaçao Formulário*/
+.registro-container{
+	background:linear-gradient(0deg, rgba(186,179,255,1) 0%, rgba(255,255,255,1) 100%);
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+
+}
+
+.registro-content {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20;
+    margin-bottom: 20px;
+    margin-top: 25px;
+
+}
+
+.registro-content h3 {
+    margin-top: -50px;
+}
+
+.centered {
+    margin: 0 auto;
+    float: none;
+}
+
+.input-group i {
+    position: absolute;
+}
+
+i {
+    padding: 17px 0px 10px 12px;
+    color: black;;
+    font-size: 16px;
+}
+
+.bi-key-fill {
+    transform: rotate(45deg)
+}
+
+#linha-vertical {
+    height: 20px;
+    border-right: 1px solid black;
+    position: absolute;
+    padding-left: 40px;
+    margin-top: 18px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    padding-left: 55px;
+
+}
+
+.form-group .input-group input{
+    border: 0.5px solid  #373e4a;
+    border-radius: 3px;
+    background: #626e8400;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-senha {
+    margin-top: 15px;
+}
+
+.form-senha a {
+    font-size: 14.5px;
+    text-decoration: none;
+    color:black;
+}
+
+.form-senha a:hover {
+   color: #5700F5;
+}
+
+/*customização botão*/
+
+.registro-form .form-group .btn-registro{
+    background: #373e4a00;
+    border-color: black;
+    border-radius: 4%;
+    text-align: center;
+    margin: 30px auto;
+    width: 150px;
+    height: 50px;
+    color: black;	
+}
+
+.registro-form .form-group .btn-registro:hover {
+    background: #5700F5;
+}
+
+.login-bottom-links a {
+    color: black;
+}

@@ -1,0 +1,265 @@
+/*Formatação Geral */
+
+.home-container {
+    background-image: url(/img/bg-home-65.png);
+    background-size: cover;
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    padding: 0; 
+}
+
+/*Barra de Navegação */
+.navbar{
+    height: 55px;
+    margin: 0 auto;
+}
+
+.navbar-brand img{
+    margin-left: 175px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+   
+}
+
+.navbar-nav {
+    font-size: 16px;
+    font-weight: bold; 
+    margin-right: 150px; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.nav-item {
+    padding-right: 70px;
+    cursor: pointer;
+
+}
+
+.nav-link{
+    color:black;
+}
+
+.nav-link:hover{
+    color:#5700F5;
+}
+
+
+
+.collapse .navbar-nav {
+    margin-left: 15px;
+}
+
+.navbar-toggler{
+    margin-top: 2px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/*Customização da Header*/
+.home-header{
+    margin-top: 150px;
+}
+
+#icones{
+    margin-top: 50px;
+}
+
+#icones i{
+    font-size: 40px;
+    text-align:center;
+}
+
+/*Botão Header */
+.button-header .btn{
+    background:  #ffff;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    width: 240px;
+    height: 60px;
+    color: #3f37c9;	
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+.button-header .btn:hover {
+    background: #1ea0ff;
+    color: #fff;
+}
+
+
+/* Section Sobre nós */
+#sobre_nos {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #dcdcdd;
+    display: table;
+    width: 100vw;   
+}
+
+#sobre_nos h2 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+#sobre_nos h2::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: currentColor;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Section Contato */
+
+#contato{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #e7ecef;
+    display: table;
+    width: 100vw;   
+}
+
+#contato h2 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+#contato h2::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: currentColor;
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+
+@media  screen and (min-width: 350px) and (max-width: 600px){ 
+    .navbar{
+        height: 90px;
+        margin: 0 auto;
+    }
+
+    .navbar-brand img{
+        margin-left: 5px;
+        margin-top: 4px;
+    }
+
+    .button-header .btn{
+        background:  #ffff;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 60px;
+        color: #5700F5;	
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 20px 20px;
+    }
+}
+
+@media  screen and (min-width: 600px) and (max-width: 799px){ 
+    .navbar{
+        height: 90px;
+        margin: 0 auto;
+    }
+
+    .navbar-brand img{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 50px;
+    }
+    
+    .nav-item {
+        padding-right: 30px;
+        cursor: pointer;
+    
+    }
+
+    .button-header .btn{
+        background:  #ffff;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 60px;
+        color: #5700F5;	
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 20px 20px;
+    }
+}
+
+
+@media  screen and (min-width: 800px) and (max-width: 1000px){ 
+    .navbar{
+        height: 90px;
+        margin: 0 auto;
+    }
+
+    .navbar-brand img{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    
+    .nav-item {
+        padding-right: 20px;
+        cursor: pointer;
+    
+    }
+
+    .button-header .btn{
+        background:  #ffff;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 60px;
+        color: #5700F5;	
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 20px 20px;
+    }
+}
+
+
+
+
+

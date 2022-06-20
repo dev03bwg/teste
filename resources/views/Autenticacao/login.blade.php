@@ -9,7 +9,7 @@
 <!-- Inicio Login container -->
 <div class="login-container" >
 
-	<!-- Inicio Login header -->
+	<!-- Inicio Login centered-->
 	<div class="centered">
 
 		<!-- Inicio Login content -->
@@ -25,7 +25,8 @@
 			<div class="login-content">
 				
 				<!-- Inicio Form -->
-				<form method="post">
+									<!--ROUTE PARA LOGIN-->
+				<form method="post" action="{{route('Autenticacao.login')}}">
 				 @csrf
 					<div class="form-group">
 						<div class="input-group">	
@@ -65,7 +66,7 @@
 			</div> <!--/Fim Login Content -->
 
 		</div> <!--/Fim Login content -->
-	</div><!--/Fim Login header-->
+	</div><!--/Fim Login centered-->
 
 </div><!--/Fim Login container -->
 

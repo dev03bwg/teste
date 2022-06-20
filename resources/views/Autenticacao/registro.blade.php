@@ -4,28 +4,29 @@
 
 @section('content')
 
-<!-- Inicio Login container -->
-<div class="login-container">
+<!-- Inicio Registro container -->
+<div class="registro-container">
 
-    <!-- Inicio Login header -->
+    <!-- Inicio Registro centered -->
     <div class="centered">
 
-        <!-- Inicio Login content -->
-        <div class="login-content">
+        <!-- Inicio Registro content -->
+        <div class="registro-content">
             <img src="img/tiex_logo.png" width="330" height="330" alt="Tiex logo" />
         </div>
-        <!--/ Fim Login content -->
+        <!--/ Fim Registro content -->
 
-        <!-- Inicio Login Form -->
-        <div class="login-form">
+        <!-- Inicio Registro Form -->
+        <div class="registro-form">
 
-            <!-- Inicio Login Content -->
-            <div class="login-content">
+            <!-- Inicio Registro Content -->
+            <div class="registro-content">
 
                 <h2> Cadastre-se </h2>
                 
                 <!-- Inicio Form -->
-                <form method="post">
+                                    <!--ROUTE PARA REGISTRO-->
+                <form method="post" action="{{route('Autenticacao.registro')}}">
                  @csrf
                  <div class="form-group">
                         <div class="input-group">	
@@ -64,7 +65,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block btn-login" name="submit_login">
+                        <button type="submit" class="btn btn-primary btn-block btn-registro" name="submit_login">
                         <div class="input-group-addon">
                             Cadastrar
                             <i class="bi bi-box-arrow-in-right"></i>
@@ -77,10 +78,10 @@
                     <a href="" style=" text-decoration: none;" target='_blank'>Tiex Workspace</a> <a href="" style="text-decoration: none;" target='_blank'>GPL</a>. 2019 - 2022.</div>
                 </div>
 
-            </div> <!--/Fim Login Content -->
+            </div> <!--/Fim Registro Content -->
 
-        </div> <!--/Fim Login content -->
-    </div><!--/Fim Login header-->
+        </div> <!--/Fim Registro content -->
+    </div><!--/Fim Registro centered -->
 
-</div><!--/Fim Login container -->
+</div><!--/Fim Registro container -->
 @endsection

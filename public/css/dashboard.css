@@ -1,0 +1,17 @@
+/* Barra de navegação esquerda */
+
+.sidebar { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: gray;
+    padding: 6px 14px;
+}
+
+.logo_content i {
+    font-size: 28px;
+    margin-right: 5px;
+    color: #fff;
+}

@@ -1,4 +1,3 @@
-
 @extends('Layouts.app')
 
 @section('title', 'Home')
@@ -7,11 +6,10 @@
 
 
 <!-- Inicio Home container -->
-<div class="home-container">
-    
+<div class="home-container" src="img/bg-datacenter.jpg">
     <!-- Inicio Barra de navegação -->
-    <nav class="navbar navbar-expand-sm fixed-top bg-light">
-        <div class="container-fluid bg-light">
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
 
             <a class="navbar-brand" href="#">
               <img src="img/tiex_logo_reduzida.png" width="90" class="d-inline-block ">
@@ -104,8 +102,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h2>Sobre nós</h2>
-          <p><b>Os produtores podem fazer o <a style="color:#343A40">Login</a> com o seu E-mail e Senha. Caso não esteja cadastrado, o produtor pode <a href="/register" style="color:#343A40">criar sua conta</a> 
-            com E-mail e CPF válidos. Se não encontrar as informações que procura em nosso site, entre em <a  style="color:#343A40">contato</a> conosco diretamente. Confira nossa <a style="color:#343A40" href="/politica-privacidade">política de privacidade.</a></b></p>
+          <p><b>Os produtores podem fazer o Login com o seu E-mail e Senha. Caso não esteja cadastrado, o produtor pode criar sua conta
+            com E-mail e CPF válidos. Se não encontrar as informações que procura em nosso site, entre em contato conosco diretamente. Confira nossas
         </div>
       </div>
     </div>

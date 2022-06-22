@@ -3,7 +3,7 @@
 	background:linear-gradient(0deg, rgba(186,179,255,1) 0%, rgba(255,255,255,1) 100%);
     display: table;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0;
 
 }
@@ -19,9 +19,6 @@
 
 }
 
-.login-content h3 {
-    margin-top: -50px;
-}
 
 .centered {
     margin: 0 auto;
@@ -100,3 +97,4 @@ i {
 .login-bottom-links a {
     color: black;
 }
+

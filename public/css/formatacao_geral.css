@@ -3,6 +3,8 @@ body {
     font-size: 12px;
     line-height: 1.42857143;
     color: black;
+    overflow-x: hidden;
+ 
 }
 
 *{
@@ -10,5 +12,7 @@ body {
     margin:0;   
     
 }
+
+
 
 

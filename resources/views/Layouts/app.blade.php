@@ -15,7 +15,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <link rel="icon"  href="img/favicon.ico">
+
+
+
+    <!-- Js -->
+    <script  defer src="{{asset('js/dashboard.js')}}"></script>
     
+    <!-- Css -->
     <link rel="stylesheet" href="{{asset('css/formatacao_geral.css')}}">
     <link rel="stylesheet" href="{{asset('css/login.css')}}">
     <link rel="stylesheet" href="{{asset('css/registro.css')}}">

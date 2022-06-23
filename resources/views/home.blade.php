@@ -6,7 +6,7 @@
 
 
 <!-- Inicio Home container -->
-<div class="home-container" src="img/bg-datacenter.jpg">
+<div class="home-container">
     <!-- Inicio Barra de navegação -->
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
@@ -102,12 +102,43 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h2>Sobre nós</h2>
-          <p><b>Os produtores podem fazer o Login com o seu E-mail e Senha. Caso não esteja cadastrado, o produtor pode criar sua conta
-            com E-mail e CPF válidos. Se não encontrar as informações que procura em nosso site, entre em contato conosco diretamente. Confira nossas
+          <p style=" font-size:20px;">A TIEX é uma empresa de tecnologia, do setor de data center, que atende empresas dos mais variados ramos com serviço de computação nuvem, telefonia VOIP, gerenciamento de redes e ambiente para Work Space. </p>
         </div>
       </div>
     </div>
 </section><!--/Fim Section Sobre Nós-->
+
+<!--Section Serviços-->
+<section class="page-sections" id="servicos">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2>Serviços</h2>
+
+        <div class="container">
+                <div class="row g-2">
+                    <div class="col-6">
+                        <a>CRM</a></br>
+                        <a>Telefonia VOIP</a>  
+                    </div>
+                    <div class="col-6">
+                        <a> Active Directory</a></br>
+                        <a>Gerência de Arquivos</a>
+                    <div class="col-6">
+                        <a>Provimento de acesso à internet</a></br>
+                        <a>Gerência Técnica (GLPI/ZABBIX)</a>
+                    </div>
+                    <div class="col-6">
+                        <a>Hospedagem (domínios, sites, e-mails)</a></br>
+                        <a>Cloud (drive, compartilhamento, office)</a>
+                    </div>
+                </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+</section><!--/Fim Section Serviços-->
 
 <!--Section Contato-->
 <section class="page-section" id="contato">
@@ -115,22 +146,20 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h2 class="mt-0">Contato</h2>
-          <p class="text-muted mb-5">Deseja criar seu Site ou Aplicativo? Tem sugestões ou dúvidas? <br> Envie-nos uma <a href=" ">mensagem</a>, ou entre em contato através do nosso E-mail e/ou Telefone abaixo.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-            <i class="fas fa-map-marker-alt fa-3x mb-3 text-muted"></i>
-            <div>Comércio, Salvador, Bahia</div>
+            <i class="bi bi-geo-alt-fill"></i>
+            <div style="font-size:15px; margin-top:25px;">Rua Miguel Calmon, 61, Edif. Ouro Preto, sala 604, Comércio, Salvador/BA. CEP: 40.015-010.</div>
           </div>
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>Bahia: (71) </div>
+        <i class="bi bi-telephone-fill"></i>
+          <div style="font-size:17px; margin-top:27px;">Telefone: 71 9 9259.6388;</div>
         </div>
         <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="">Contato</a>
+          <i class="bi bi-envelope-fill"></i>
+          <div class="d-block" style="font-size:19px; margin-top:27px;">contato@tiex.tec.br</div>
           
         </div>
         

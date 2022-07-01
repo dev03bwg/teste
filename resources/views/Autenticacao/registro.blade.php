@@ -25,7 +25,7 @@
                 <h2> Cadastre-se </h2>
                 
                 <!-- Inicio Form -->
-                                    <!--ROUTE PARA REGISTRO-->
+                                <!--ROUTE PARA REGISTRO-->
                 <form method="post" action="{{route('Autenticacao.registro')}}">
                  @csrf
                  <div class="form-group">
@@ -66,7 +66,8 @@
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary btn-block btn-registro" name="submit_login">
-                        <div class="input-group-addon">
+                                                        <!--ROUTE PARA LOGIN -->
+                        <div class="input-group-addon" href="{{route('Autenticacao.login')}}">
                             Cadastrar
                             <i class="bi bi-box-arrow-in-right"></i>
                         </div>

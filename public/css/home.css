@@ -1,13 +1,13 @@
 /*Formatação Geral */
 
-.home-container{
+.home-container {
     width: 100%;
     height: 100vh;
     display: table;
     position: relative;
     overflow-x: hidden;
 }
-  
+
 .home-container::after {
     content: "";
     background: url(/img/bg-home.png);
@@ -18,12 +18,12 @@
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;   
+    z-index: -1;
 }
 
 
 /*Barra de Navegação */
-.navbar{
+.navbar {
     height: 55px;
     margin: 0 auto;
     background-color: #fff;
@@ -33,7 +33,7 @@
     background-color: #fff;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     margin-left: 175px;
     /*margin-top: 30px;*/
     /*margin-bottom: 15px;*/
@@ -43,8 +43,8 @@
 
 .navbar-nav {
     font-size: 16px;
-    font-weight: bold; 
-    margin-right: 150px; 
+    font-weight: bold;
+    margin-right: 150px;
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -55,12 +55,12 @@
 
 }
 
-.nav-link{
-    color:black;
+.nav-link {
+    color: black;
 }
 
-.nav-link:hover{
-    color:#2541b2;
+.nav-link:hover {
+    color: #2541b2;
 }
 
 
@@ -69,7 +69,7 @@
     margin-left: 15px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     margin-top: 2px;
     outline: none;
     border: none;
@@ -77,29 +77,29 @@
 }
 
 /*Customização da Header*/
-.home-header{
+.home-header {
     margin-top: 150px;
 }
 
-#icones{
+#icones {
     margin-top: 50px;
 }
 
-#icones i{
+#icones i {
     font-size: 40px;
-    text-align:center;
+    text-align: center;
 }
 
 /*Botão Header */
-.button-header .btn{
-    background:  #3a86ff;
+.button-header .btn {
+    background: #3a86ff;
     border-radius: 50px;
     border: none;
     text-align: center;
     margin-top: 20px;
     width: 240px;
     height: 60px;
-    color: #fff;	
+    color: #fff;
     font-weight: bolder;
     cursor: pointer;
     padding: 20px 20px;
@@ -110,25 +110,83 @@
     color: #fff;
 }
 
+/* Barra de navegação teste */
+/* dock2 - bottom */
+.trapezio {
+    border-bottom: 100px solid rgba(54, 52, 52, 0.25);
+    border-bottom-width: 35px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: auto;
+    padding-left: 50%;
+    padding-right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+
+}
+
+#dock2 {
+    width: 100%;
+    bottom: 30px;
+    position: fixed;
+    margin: 0 auto;
+    float: none;
+    left: 0px;
+
+}
+
+
+.dock-container2 {
+    position: absolute;
+    height: 50px;
+}
+
+a.dock-item2 {
+    display: block;
+    width: 30px;
+    color: #000;
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.dock-item2 span {
+    display: none;
+    padding-left: 20px;
+}
+
+.dock-item2 img {
+    border: none;
+    margin: 5px 10px 17px;
+    width: 100%;
+}
 
 /* Section Sobre nós */
 #sobre_nos {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #314cb6;
+    width: 100%;
+    background-color: #2541b2;
     color: #fff;
     display: table;
-    width: 100vw;   
+    padding: 150px 90px 150px 90px;
 }
+
 
 #sobre_nos h2 {
     text-align: center;
     font-weight: bolder;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     font-size: 30px;
 }
 
-#sobre_nos h2::after{
+#sobre_nos h2::after {
     content: '';
     width: 60px;
     height: 3px;
@@ -137,15 +195,61 @@
     margin: 10px auto;
 }
 
+
+/* Section Missão, Visão, Valores */
+
+#mvv {
+    margin-top: 100px;
+}
+
+#mvv h4 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+#mvv h4::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: currentColor;
+    display: block;
+    margin: 10px auto;
+}
+
+
+#box {
+    border: 1px solid #fff;
+    margin-bottom: 50px;
+}
+
+
+#mvv p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 35px;
+}
+
+
+#mvv img {
+    width: 60px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: block;
+}
+
+
 /* Section Serviços */
 
 #servicos {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #8d99ae;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     display: table;
-    width: 100vw;   
+    width: 100vw;
 }
 
 #servicos h2 {
@@ -155,7 +259,7 @@
     font-size: 30px;
 }
 
-#servicos h2::after{
+#servicos h2::after {
     content: '';
     width: 60px;
     height: 3px;
@@ -164,30 +268,59 @@
     margin: 10px auto;
 }
 
-#servicos ul li {
-    font-size: 19px;
+
+.carousel-item {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.carousel-text {
+    text-align: center;
+    font-weight: bolder;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 25px;
+    float: none;
+    font-size: 18px;
+}
+
+.carousel-text p {
+    margin: 0 auto;
+    margin-top: 25px;
+    float: none;
+    width: 350px;
+}
+
+
+.carousel-item .btn {
+    margin: 0 auto;
+    float: none;
+    margin-top: 15px;
+    background: #2541b2;
+    color: #fff;
+    border: none;
 }
 
 
 /* Section Contato */
 
-#contato{
+#contato {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #8d99ae;
+    background-color: #2541b2;
     color: #fff;
     display: table;
-    width: 100vw;   
+    width: 100vw;
 }
 
 #contato h2 {
     text-align: center;
     font-weight: bolder;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     font-size: 30px;
 }
 
-#contato h2::after{
+#contato h2::after {
     content: '';
     width: 60px;
     height: 3px;
@@ -196,7 +329,7 @@
     margin: 10px auto;
 }
 
-.page-section .bi{
+#contato .bi {
     font-size: 35px;
     color: #fff;
 }
@@ -204,14 +337,10 @@
 
 
 
-
-
-
-
-
 /* Responsividade */
+@media only screen and (max-width: 380px) {
 
-@media  screen and (min-width: 320px){ 
+    /* Home */
     .home-container::after {
         content: "";
         background: url(/img/bg-home.png);
@@ -223,16 +352,16 @@
         bottom: 0;
         right: 0;
         position: absolute;
-        z-index: -1;   
+        z-index: -1;
     }
-    
-    
-    .navbar{
+
+
+    .navbar {
         height: 90px;
         margin: 0 auto;
     }
 
-    .navbar-brand img{
+    .navbar-brand img {
         margin-left: 5px;
         margin-top: 4px;
     }
@@ -241,23 +370,97 @@
         margin-top: 30px;
     }
 
-    .button-header .btn{
-        background:  #3a86ff;
+    .button-header .btn {
+        background: #3a86ff;
         border-radius: 50px;
         border: none;
         text-align: center;
         margin-top: 20px;
+        margin-bottom: 30px;
         width: 200px;
         height: 60px;
-        color: #fff;	
+        color: #fff;
         font-weight: bolder;
         cursor: pointer;
         padding: 20px 20px;
     }
-    
+
+    /* sobre-nos */
+    #sobre_nos h2 {
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    /* Serviços */
+
+    #servicos img {
+        width: 320px;
+        height: 240px;
+        margin-bottom: 50px;
+    }
+
+    #servicos h2 {
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: 420px;
+    }
+
+    .carousel-item {
+        margin-top: 40px;
+    }
+
+    .carousel-inner .carousel-item h4 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+
+    .carousel-inner .carousel-item p {
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 25px;
+        float: none;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .carousel-item .btn {
+        margin-left: 60px;
+        margin-top: 15px;
+        background: #2541b2;
+        color: #fff;
+        border: none;
+    }
+
+
+
+    /* Section Missão, Visão, Valores */
+    #mvv p {
+
+        font-size: 18px;
+    }
+
+    /* Contato */
+    #contato h2 {
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+
+
+
 }
 
-@media  screen and (min-width: 768px) and (max-width: 1024px){ 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .home-container::after {
         content: "";
         background: url(/img/bg-home.png);
@@ -269,16 +472,16 @@
         bottom: 0;
         right: 0;
         position: absolute;
-        z-index: -1;   
+        z-index: -1;
     }
-    
-    
-    .navbar{
+
+
+    .navbar {
         height: 90px;
         margin: 0 auto;
     }
 
-    .navbar-brand img{
+    .navbar-brand img {
         margin-left: 15px;
         margin-top: 10px;
     }
@@ -288,34 +491,38 @@
         font-weight: bold;
         margin-right: 50px;
     }
-    
+
     .nav-item {
         padding-right: 30px;
         cursor: pointer;
-    
+
     }
 
     .home-header {
         margin-top: 30px;
     }
 
-    .button-header .btn{
-        background:  #3a86ff;
+    .button-header .btn {
+        background: #3a86ff;
         border-radius: 50px;
         border: none;
         text-align: center;
         margin-top: 20px;
         width: 200px;
         height: 60px;
-        color: #fff;	
+        color: #fff;
         font-weight: bolder;
         cursor: pointer;
         padding: 20px 20px;
     }
 
+    #servicos img {
+        margin-bottom: 50px;
+    }
+
 }
 
-@media  screen and (min-width: 1024px){ 
+@media screen and (min-width: 1024px) {
     .home-container::after {
         content: "";
         background: url(/img/bg-home.png);
@@ -327,15 +534,15 @@
         bottom: 0;
         right: 0;
         position: absolute;
-        z-index: -1;   
+        z-index: -1;
     }
-    
-    .navbar{
+
+    .navbar {
         height: 55px;
         margin: 0 auto;
     }
 
-    .navbar-brand img{
+    .navbar-brand img {
         margin-left: 50px;
         margin-top: 10px;
     }
@@ -345,34 +552,29 @@
         font-weight: bold;
         margin-left: 30px;
     }
-    
+
     .nav-item {
         padding-right: 20px;
         cursor: pointer;
-    
+
     }
 
     .home-header {
         margin-top: 130px;
     }
 
-    .button-header .btn{
-        background:  #3a86ff;
+    .button-header .btn {
+        background: #3a86ff;
         border-radius: 50px;
         border: none;
         text-align: center;
         margin-top: 20px;
         width: 200px;
         height: 60px;
-        color: #fff;	
+        color: #fff;
         font-weight: bolder;
         cursor: pointer;
         padding: 20px 20px;
     }
 
 }
-
-
-
-
-

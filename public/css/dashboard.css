@@ -24,7 +24,6 @@
     height:100%;
     width:78px;
     background:var(--black-color);
-    padding:6px 14px;
     z-index:99;
     transition:all 0.5s ease;
 }
@@ -56,11 +55,11 @@
   
 .sidebar #btn{
     position:absolute;
-    /*color:var(--white-color);*/
+    color:var(--white-color);
     background-color: 5px;
     top:6px;
-    left:50%;
-    font-size: 22px;
+    left:40%;
+    font-size: 35px;
     height:50px;
     width:50px;
     text-align: center;
@@ -143,15 +142,16 @@
     color:var(--white-color);
 }
 
-.sidebar ul li .bx-search{
+.sidebar ul li .bi-search{
     position:relative;
+    margin-left: 4px;
     z-index: 99;
     color:var(--white-color);
     font-size: 22px;
     transition:all 0.5s ease;
 }
 
-.sidebar ul li .bx-search:hover{
+.sidebar ul li .bi-search:hover{
     background:var(--white-color);
     color:#1d1b31;
 }
@@ -179,7 +179,7 @@
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
-    margin-left: -15px;
+    margin-left: -8px;
     color: red;
     padding-top: 0px;
 }
@@ -196,4 +196,10 @@
     transition:0s;
     opacity:1;
     pointer-events: auto;
+}
+
+/* Parte central */
+
+iframe {
+    padding-left: 75px;
 }

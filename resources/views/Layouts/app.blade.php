@@ -21,9 +21,7 @@
 
     <!-- Js -->
     <script  defer src="{{asset('js/dashboard.js')}}"></script>
-    <script  defer src="{{asset('js/home/home.js')}}"></script>
-    <script type="text/javascript" src="js/home/jquery.js"></script>
-    <script type="text/javascript" src="js/home/interface.js"></script>
+    <script  defer src="{{asset('js/home.js')}}"></script>
     
     <!-- Css -->
     <link rel="stylesheet" href="{{asset('css/formatacao_geral.css')}}">

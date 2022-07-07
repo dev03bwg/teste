@@ -1,0 +1,241 @@
+/* Responsividade */
+@media only screen and (max-width: 380px) {
+
+    /* Home */
+    .home-container::after {
+        content: "";
+        background: url(/img/bg-home.png);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .navbar {
+        height: 90px;
+        margin: 0 auto;
+    }
+
+    .navbar-brand img {
+        margin-left: 5px;
+        margin-top: 4px;
+    }
+
+    .home-header {
+        margin-top: 30px;
+    }
+
+    .button-header .btn {
+        background: #3a86ff;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 20px 20px;
+    }
+
+    /* sobre-nos */
+    #sobre_nos h2 {
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    /* Serviços */
+
+    #servicos img {
+        width: 320px;
+        height: 240px;
+        margin-bottom: 50px;
+    }
+
+    #servicos h2 {
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: 420px;
+    }
+
+    .carousel-item {
+        margin-top: 40px;
+    }
+
+    .carousel-inner .carousel-item h4 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+
+    .carousel-inner .carousel-item p {
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 25px;
+        float: none;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .carousel-item .btn {
+        margin-left: 60px;
+        margin-top: 15px;
+        background: #2541b2;
+        color: #fff;
+        border: none;
+    }
+
+
+
+    /* Section Missão, Visão, Valores */
+    #mvv p {
+
+        font-size: 18px;
+    }
+
+    /* Contato */
+    #contato h2 {
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .home-container::after {
+        content: "";
+        background: url(/img/bg-home.png);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .navbar {
+        height: 90px;
+        margin: 0 auto;
+    }
+
+    .navbar-brand img {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 50px;
+    }
+
+    .nav-item {
+        padding-right: 30px;
+        cursor: pointer;
+
+    }
+
+    .home-header {
+        margin-top: 30px;
+    }
+
+    .button-header .btn {
+        background: #3a86ff;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        margin-top: 20px;
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 20px 20px;
+    }
+
+    #servicos img {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .home-container::after {
+        content: "";
+        background: url(/img/bg-home.png);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .navbar {
+        height: 55px;
+        margin: 0 auto;
+    }
+
+    .navbar-brand img {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+
+    .nav-item {
+        padding-right: 20px;
+        cursor: pointer;
+
+    }
+
+    .home-header {
+        margin-top: 130px;
+    }
+
+    .button-header .btn {
+        background: #3a86ff;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        margin-top: 20px;
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 20px 20px;
+    }
+
+}

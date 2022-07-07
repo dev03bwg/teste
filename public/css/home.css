@@ -10,9 +10,10 @@
 
 .home-container::after {
     content: "";
-    background: url(/img/bg-home.png);
-    background-size: cover;
-    opacity: 0.6;
+    /*background: url(/img/bg-home.png);*/
+    /*background-size: cover;*/
+    background-color: #fff;
+    opacity: 00;
     top: 0;
     left: 0;
     bottom: 0;
@@ -35,8 +36,6 @@
 
 .navbar-brand img {
     margin-left: 175px;
-    /*margin-top: 30px;*/
-    /*margin-bottom: 15px;*/
     margin-bottom: 0px;
     margin-top: 45px;
 }
@@ -111,62 +110,154 @@
 }
 
 /* Barra de navegação teste */
-/* dock2 - bottom */
-.trapezio {
+
+.botao-flutuante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 51%;
+    left: 49%;
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+
+
+.bi-columns-gap {
+    font-size: 25px;
+    position: absolute;
+    color: #000;
+}
+
+
+div.cap {
     border-bottom: 100px solid rgba(54, 52, 52, 0.25);
     border-bottom-width: 35px;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     height: 0;
-    width: auto;
-    padding-left: 50%;
-    padding-right: 50%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 16px;
     backdrop-filter: blur(13px);
     -webkit-backdrop-filter: blur(13px);
-
 }
 
-#dock2 {
-    width: 100%;
-    bottom: 30px;
-    position: fixed;
-    margin: 0 auto;
-    float: none;
-    left: 0px;
-
-}
-
-
-.dock-container2 {
+div.cap.left {
     position: absolute;
-    height: 50px;
-}
-
-a.dock-item2 {
-    display: block;
-    width: 30px;
-    color: #000;
     bottom: 0px;
+    left: 0px;
+}
+
+div.cap.right {
     position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+ul.osx-dock {
+    display: inline-block;
+    height: 130px;
+    overflow: hidden;
+    margin: 0 0 0 40px;
+}
+
+ul.osx-dock li {
+    display: block;
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 60px 0 4px 0;
+    -webkit-transition: 0.15s linear;
+    -webkit-transition-property: -webkit-transform margin;
     text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    margin-left: 40px;
 }
 
-.dock-item2 span {
+ul.osx-dock li a {
+    display: block;
+    height: 50px;
+    padding: 0 1px;
+    -webkit-transition: 0.15s linear;
+    -webkit-transition-property: -webkit-transform margin;
+    margin: 0;
+    -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent),
+            color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+}
+
+ul.osx-dock li a img {
+    width: 48px;
+}
+
+ul.osx-dock li:hover {
+    z-index: 200;
+}
+
+ul.osx-dock li:hover a {
+    -webkit-transform-origin: center bottom;
+    -webkit-transform: scale(1.5);
+}
+
+ul.osx-dock li.nearby {
+    margin-left: 6px;
+    margin-right: 6px;
+    z-index: 100;
+}
+
+ul.osx-dock li.nearby a {
+    -webkit-transform-origin: center bottom;
+    -webkit-transform: scale(1.25);
+}
+
+ul.osx-dock li span {
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    bottom: 80px;
+    margin: 0 auto;
     display: none;
-    padding-left: 20px;
+    width: auto;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 6px;
+    -webkit-border-radius: 6px;
+    color: #fff;
 }
 
-.dock-item2 img {
-    border: none;
-    margin: 5px 10px 17px;
+ul.osx-dock li:hover span {
+    display: block;
+}
+
+div#dockContainer {
+    position: fixed;
+    bottom: 12px;
+    height: 120px;
+    padding: 50px 0 0;
+    /*ext-align: center;*/
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     width: 100%;
+    line-height: 1;
+    z-index: 100;
+    right: 67%;
+    left: 33%;
+    transition-delay: 0.5s
+}
+
+div#dockWrapper {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+}
+
+#dockContainer,
+#dockContainer * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 /* Section Sobre nós */
@@ -244,7 +335,7 @@ a.dock-item2 {
 /* Section Serviços */
 
 #servicos {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
     background-color: #fff;
     color: #000;
@@ -335,28 +426,12 @@ a.dock-item2 {
 }
 
 
-
-
 /* Responsividade */
-@media only screen and (max-width: 380px) {
 
-    /* Home */
-    .home-container::after {
-        content: "";
-        background: url(/img/bg-home.png);
-        background-position: center;
-        background-size: cover;
-        opacity: 0.6;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-    }
-
-
-    .navbar {
+ /* Telas muito pequena  (celular) */
+ @media only screen and (max-width: 600px) {
+     /*Barra de navegação */
+     .navbar {
         height: 90px;
         margin: 0 auto;
     }
@@ -366,215 +441,69 @@ a.dock-item2 {
         margin-top: 4px;
     }
 
+    /* Header */
     .home-header {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
-    .button-header .btn {
-        background: #3a86ff;
-        border-radius: 50px;
-        border: none;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        width: 200px;
-        height: 60px;
-        color: #fff;
-        font-weight: bolder;
-        cursor: pointer;
-        padding: 20px 20px;
+    #logo-header {
+        width: 250px;
+        height:250px;
     }
 
-    /* sobre-nos */
-    #sobre_nos h2 {
-        text-align: center;
-        font-weight: bolder;
-        margin-bottom: 30px;
-        font-size: 20px;
+    #icones i{
+        font-size: 25px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto; 
     }
 
-    /* Serviços */
-
-    #servicos img {
-        width: 320px;
-        height: 240px;
-        margin-bottom: 50px;
-    }
-
-    #servicos h2 {
-        text-align: center;
-        font-weight: bolder;
-        margin-bottom: 40px;
-        font-size: 20px;
-    }
-
-    .carousel-inner {
-        height: 420px;
-    }
-
-    .carousel-item {
-        margin-top: 40px;
-    }
-
-    .carousel-inner .carousel-item h4 {
-        text-align: center;
-        font-weight: bolder;
-        font-size: 18px;
-    }
-
-    .carousel-inner .carousel-item p {
-        width: 200px;
-        margin: 0 auto;
-        margin-top: 25px;
-        float: none;
-        font-size: 18px;
-        text-align: justify;
-    }
-
-    .carousel-item .btn {
-        margin-left: 60px;
-        margin-top: 15px;
-        background: #2541b2;
-        color: #fff;
-        border: none;
-    }
-
-
-
-    /* Section Missão, Visão, Valores */
-    #mvv p {
-
-        font-size: 18px;
-    }
-
-    /* Contato */
-    #contato h2 {
-        text-align: center;
-        font-weight: bolder;
-        margin-bottom: 40px;
-        font-size: 20px;
-    }
-
-
-
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .home-container::after {
-        content: "";
-        background: url(/img/bg-home.png);
-        background-position: center;
-        background-size: cover;
-        opacity: 0.6;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-    }
-
-
-    .navbar {
-        height: 90px;
-        margin: 0 auto;
-    }
-
-    .navbar-brand img {
-        margin-left: 15px;
-        margin-top: 10px;
-    }
-
-    .navbar-nav {
+    #titulos-icon h6{
         font-size: 15px;
-        font-weight: bold;
-        margin-right: 50px;
     }
 
-    .nav-item {
-        padding-right: 30px;
-        cursor: pointer;
-
+    #icones .bi-envelope {
+        margin-left: 10px;
     }
 
-    .home-header {
-        margin-top: 30px;
+    #icones .bi-calendar2-week{
+        margin-left: 18px;
     }
 
-    .button-header .btn {
-        background: #3a86ff;
-        border-radius: 50px;
-        border: none;
-        text-align: center;
-        margin-top: 20px;
-        width: 200px;
-        height: 60px;
-        color: #fff;
-        font-weight: bolder;
-        cursor: pointer;
-        padding: 20px 20px;
+    #icones 
+
+    #icones .bi-headset{
+        margin-right: 40px;
     }
 
-    #servicos img {
-        margin-bottom: 50px;
-    }
 
-}
 
-@media screen and (min-width: 1024px) {
-    .home-container::after {
-        content: "";
-        background: url(/img/bg-home.png);
-        background-position: center;
-        background-size: cover;
-        opacity: 0.6;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-    }
 
-    .navbar {
-        height: 55px;
-        margin: 0 auto;
-    }
 
-    .navbar-brand img {
-        margin-left: 50px;
-        margin-top: 10px;
-    }
+    
 
-    .navbar-nav {
-        font-size: 15px;
-        font-weight: bold;
-        margin-left: 30px;
-    }
 
-    .nav-item {
-        padding-right: 20px;
-        cursor: pointer;
 
-    }
 
-    .home-header {
-        margin-top: 130px;
-    }
 
-    .button-header .btn {
-        background: #3a86ff;
-        border-radius: 50px;
-        border: none;
-        text-align: center;
-        margin-top: 20px;
-        width: 200px;
-        height: 60px;
-        color: #fff;
-        font-weight: bolder;
-        cursor: pointer;
-        padding: 20px 20px;
-    }
 
-}
+
+
+
+
+    
+ }
+
+ /* Telas Pequena (tablets e celular maiores) */
+ @media only screen and (min-width: 600px) {...}
+ 
+ /* Telas pequena (tablets, 768px) */
+ @media only screen and (min-width: 768px) {...}
+ 
+ /* Telas grandes (computadores e notbook, 992px) */
+ @media only screen and (min-width: 992px) {...}
+ 
+ /* Tela muito grande (computadores e notbook, 1200px) */
+ @media only screen and (min-width: 1200px) {...} 
+
+

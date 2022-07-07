@@ -51,7 +51,7 @@
             <div class="row h-100 align-items-center justify-content-center text-center">
 
                 <div class="col-lg-10 align-self-end">
-                    <img src="img/tiex_logo.png" width="330" height="330" alt="Tiex logo" />
+                    <img src="img/tiex_logo.png" width="330" height="330" alt="Tiex logo" id="logo-header" />
                 </div>
 
                 <div class="col-lg-10 align-self-end">
@@ -73,7 +73,7 @@
                             <a href=""><i class="bi bi-headset md-6"></i></a>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="titulos-icon">
                         <div class="col" style="padding:0px 10px;text-align:center;">
                             <h6>E-mail</h6>
                         </div>
@@ -87,13 +87,13 @@
                         </div>
 
                         <div class="col" style="padding:0px 5px;text-align:center;">
-                            <h6>Comunicação</h6>
+                            <h6>Voz</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 align-self-baseline button-header">
                     <h5 class="text-black font-weight-light mb-5" style="margin-top:90px">Sua área de trabalho em um só lugar!</h5>
-                                            <!-- ROUTE PARA REGISTRO -->
+                    <!-- ROUTE PARA REGISTRO -->
                     <a class="btn btn-primary" href="{{route('Autenticacao.registro')}}">CRIAR NOVA CONTA</a>
                 </div>
             </div>
@@ -103,42 +103,63 @@
 </div>
 <!--/Fim Home content-->
 
-
-
-<!--Section Sobre Nós-->
-<section id="sobre_nos">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2>Sobre nós</h2>
-                <p style="font-size:20px; font-weight: bold;">A TIEX é uma empresa de tecnologia, do setor de data center, que atende empresas dos mais variados ramos com serviço de computação nuvem, telefonia VOIP, gerenciamento de redes e ambiente para Work Space. </p>
-            </div>
+<!-- Barra teste -->
+<div class="botao-flutuante" id="dock">
+    <i class="bi bi-columns-gap" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" onclick="acao('dock')"></i>
+</div>
+<div class="collapse collapse-horizontal" id="collapseWidthExample" onmouseleave="acaoBarra('collapseWidthExample')">
+    <div id="dockContainer">
+        <div id="dockWrapper">
+            <div class="cap left"></div>
+            <ul class="osx-dock">
+                <li class="active">
+                    <span>ZURB</span>
+                    <a href="https://www.zurb.com">
+                        <img alt="Zurb icon" src="https://d33wubrfki0l68.cloudfront.net/31714c00e7f5bf1f440bc8c9f569ea63fbdb89cc/ec0cc/playground/uploads/upload/upload/151/zurb-icon.png" />
+                    </a>
+                </li>
+                <li>
+                    <span>LinkedIn</span>
+                    <a href="https://www.linkedin.com"><img alt="Linkedin icon" src="https://d33wubrfki0l68.cloudfront.net/71c53d31e16820202404d793049721a42db7ec0c/6e9a2/playground/uploads/upload/upload/154/linkedin-icon.png" /></a>
+                </li>
+                <li>
+                    <span>Notable</span>
+                    <a href="https://www.notableapp.com"><img alt="Notable icon" src="https://d33wubrfki0l68.cloudfront.net/b3e14a060fea6c79f7bce1a406dbb1b52c76e32a/0c544/playground/uploads/upload/upload/152/notable-icon.png" /></a>
+                </li>
+                <li>
+                    <span>last.fm</span>
+                    <a href="https://www.last.fm"><img alt="Lastfm icon" src="https://d33wubrfki0l68.cloudfront.net/d377f15c758e68f4ef77ce4be6434902fc2d4a6b/cbab8/playground/uploads/upload/upload/155/lastfm-icon.png" /></a>
+                </li>
+                <li>
+                    <span>Facebook</span>
+                    <a href="https://www.facebook.com"><img alt="Facebook icon" src="https://d33wubrfki0l68.cloudfront.net/c0779bcdd947e205883f2046aad14b2d66c8f382/f8bfd/playground/uploads/upload/upload/150/facebook-icon.png" /></a>
+                </li>
+                <li>
+                    <span>Google</span>
+                    <a href="https://www.google.com"><img alt="Google icon" src="https://d33wubrfki0l68.cloudfront.net/8f32f44c52d529a545730639e257bcb781bdf16b/a8702/playground/uploads/upload/upload/153/google-icon.png" /></a>
+                </li>
+                <li>
+                    <span>Notable</span>
+                    <a href="https://www.notableapp.com"><img alt="Notable icon" src="https://d33wubrfki0l68.cloudfront.net/b3e14a060fea6c79f7bce1a406dbb1b52c76e32a/0c544/playground/uploads/upload/upload/152/notable-icon.png" /></a>
+                </li>
+                <li>
+                    <span>last.fm</span>
+                    <a href="https://www.last.fm"><img alt="Lastfm icon" src="https://d33wubrfki0l68.cloudfront.net/d377f15c758e68f4ef77ce4be6434902fc2d4a6b/cbab8/playground/uploads/upload/upload/155/lastfm-icon.png" /></a>
+                </li>
+                <li>
+                    <span>Facebook</span>
+                    <a href="https://www.facebook.com"><img alt="Facebook icon" src="https://d33wubrfki0l68.cloudfront.net/c0779bcdd947e205883f2046aad14b2d66c8f382/f8bfd/playground/uploads/upload/upload/150/facebook-icon.png" /></a>
+                </li>
+                <li>
+                    <span>Google</span>
+                    <a href="https://www.google.com"><img alt="Google icon" src="https://d33wubrfki0l68.cloudfront.net/8f32f44c52d529a545730639e257bcb781bdf16b/a8702/playground/uploads/upload/upload/153/google-icon.png" /></a>
+                </li>
+            </ul>
         </div>
     </div>
+</div>
 
-    <div id="mvv">
-        <div class="container overflow-hidden">
-            <div class="row">
-                <div class="col" id="box" style="margin-right:50px">
-                    <h4>Missão</h4>
-                    <img src="img/icon-missao.png" width="20%">
-                    <p>Oferece serviços de tecnologia de alto nível com suporte técnico próximo aos nossos clientes.</p>
-                </div>
-                <div class="col" id="box" style="margin-right:50px">
-                    <h4>Visão</h4>
-                    <img src="img/icon-visao.png" width="20%">
-                    <p>Ser referência em serviços para ambiente de trabalho cloud.</p>
-                </div>
-                <div class="col" id="box">
-                    <h4>Valores</h4>
-                    <img src="img/icon-valores.png" width="20%" style="margin-right:160px">
-                    <p>Inovação, organização, atendimento de excelência unido ao comprometimento.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/Fim Section Sobre Nós-->
+<!--/Fim barra teste -->
 
 <!--Section Serviços-->
 <section id="servicos">
@@ -249,7 +270,7 @@
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-               </button>
+                </button>
             </div>
         </div>
     </div>
@@ -279,36 +300,14 @@
             </div>
             <div class="col-lg-4 mr-auto text-center">
                 <i class="bi bi-envelope-fill"></i>
-                <div class="d-block" style="font-size:19px; margin-top:27px;">  
-                    contato@tiex.tec.br 
+                <div class="d-block" style="font-size:19px; margin-top:27px;">
+                    contato@tiex.tec.br
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--/ Fim Section Contato-->
-
- <!-- Barra teste -->
- <div class="dock" id="dock2">
-  <div class="dock-container2">
-    <div class="trapezio">
-        <a class="dock-item2" href="#">
-            <span class="tooltip" data-bs-toggle="tooltip" title="Default tooltip">Home</span>
-            <img src="img/nav/home.png" alt="home" />
-        </a> 
-        <a class="dock-item2" href="#"><span>Contact</span><img src="img/nav/email.png" alt="contact" /></a> 
-        <a class="dock-item2" href="#"><span>Portfolio</span><img src="img/nav/portfolio.png" alt="portfolio" /></a> 
-        <a class="dock-item2" href="#"><span>Music</span><img src="img/nav/music.png" alt="music" /></a> 
-        <a class="dock-item2" href="#"><span>Video</span><img src="img/nav/video.png" alt="video" /></a> 
-        <a class="dock-item2" href="#"><span>History</span><img src="img/nav/history.png" alt="history" /></a> 
-        <a class="dock-item2" href="#"><span>Calendar</span><img src="img/nav/calendar.png" alt="calendar" /></a> 
-        <a class="dock-item2" href="#"><span>Links</span><img src="img/nav/link.png" alt="links" /></a> 
-        <a class="dock-item2" href="#"><span>RSS</span><img src="img/nav/rss.png" alt="rss" /></a> 
-        <a class="dock-item2" href="#"><span>RSS2</span><img src="img/nav/rss2.png" alt="rss" /></a>
-    </div>
-  </div>
-</div>
-    <!--/Fim barra teste -->
 
 <!-- Footer -->
 <footer class="py-5" style="background-color: #e7ecef;">

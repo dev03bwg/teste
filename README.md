@@ -72,3 +72,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # Dashboard_Tiex
 # Dashboard_Tiex
 # Projeto-Tiex
+# Projeto-Tiex
+# Projeto-Tiex
+# Site_Tiex
